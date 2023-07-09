@@ -1,2 +1,6 @@
-package am.hitech.util.exception;public interface ErrorMessage {
+package am.hitech.util;
+
+public interface ErrorMessage {
+
+    String DUPLICATE_EMAIL = "There is already user with this email";
 }

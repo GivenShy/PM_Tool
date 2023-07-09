@@ -3,7 +3,7 @@ package am.hitech.service.impl;
 import am.hitech.model.Role;
 import am.hitech.repository.RoleRepository;
 import am.hitech.service.RoleService;
-import am.hitech.util.RoleNotFoundException;
+import am.hitech.util.exception.RoleNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

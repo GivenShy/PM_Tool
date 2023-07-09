@@ -1,5 +1,7 @@
 package am.hitech.model;
 
+import am.hitech.model.enums.Roles;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -19,15 +21,21 @@ public class User {
 
     private String email;
 
+    @JsonIgnore
     private String password;
 
+    @JsonIgnore
     private Integer verificationCode;
 
+    @JsonIgnore
     private Integer passwordToken;
 
     private String status;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id",nullable = false)
-    private Role role;
+    @Column(name = "role_id")
+    @Enumerated(EnumType.ORDINAL)
+    private Roles role;
+//    @ManyToOne
+//    @JoinColumn(name = "role_id",nullable = false)
+//    private Role role;
 }

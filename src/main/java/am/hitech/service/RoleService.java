@@ -1,7 +1,7 @@
 package am.hitech.service;
 
 import am.hitech.model.Role;
-import am.hitech.util.RoleNotFoundException;
+import am.hitech.util.exception.RoleNotFoundException;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package am.hitech.util.exceptions;
+package am.hitech.util.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

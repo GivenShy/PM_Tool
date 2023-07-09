@@ -2,7 +2,7 @@ package am.hitech.controller;
 
 import am.hitech.model.Role;
 import am.hitech.service.RoleService;
-import am.hitech.util.RoleNotFoundException;
+import am.hitech.util.exception.RoleNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
